@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+    />
+    <link rel="stylesheet" href="css/select2-bootstrap4.min.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div style="display: flex; justify-content: space-evenly;">
+        <label class="form__control form__control--radio">
+          Yes
+          <input type="radio" name="existing-customer" />
+          <div class="form__control-indicator"></div>
+        </label>
+        <label class="form__control form__control--radio">
+          No
+          <input type="radio" name="existing-customer" />
+          <div class="form__control-indicator"></div>
+        </label>
+      </div>
+
+      <label class="form__label">
+        <div class="form__control">
+          <span class="form__control--checkbox-title"
+            >Being better with money</span
+          >
+          <div class="form__control--checkbox">
+            <input
+              type="checkbox"
+              class="form__input js-newsletter-modal-checkbox"
+              value="Being better with money"
+            />
+            <div class="form__control-indicator"></div>
+          </div>
+        </div>
+      </label>
+
+      <div class="form__group">
+        <label class="form__label"> Name </label>
+        <input
+          type="text"
+          name="name"
+          value=""
+          maxlength=""
+          class="form__input form__input--required"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <div class="form__group form__group--error">
+        <label class="form__label"> Name </label>
+        <input
+          type="text"
+          name="name"
+          value=""
+          maxlength=""
+          class="form__input form__input--required"
+          placeholder="Enter your name"
+        />
+        <div class="form__group--error_message">
+          <ul>
+            <li>This field is required</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label">
+          Comments: (<span class="form__label--optional"
+            >Optional <span class="form__label--optional-star">*</span></span
+          >)
+        </label>
+        <textarea
+          type="textarea"
+          name="message"
+          value=""
+          rows="4"
+          maxlength=""
+          class="form__textarea"
+        ></textarea>
+      </div>
+
+      <div>
+        <button class="form__submit-button form__submit-button--disabled">
+          submit
+        </button>
+      </div>
+      <div>
+        <button class="form__submit-button">submit</button>
+      </div>
+
+      <div class="form__group">
+        <label for="" class="form__label">Choose state</label>
+        <select name="states" id="states">
+          <option></option>
+          <option value="alaska">Alaska</option>
+          <option value="montana">Montana</option>
+          <option value="alabama">Alabama</option>
+        </select>
+      </div>
+
+      <ul class="form__bullets">
+        <li>
+          any technical or other problem (including interruption, malfunction,
+          downtime or other failure) that affects this website, system or any
+          online service or any database for any reason;
+        </li>
+        <li>
+          any loss of or damage to any personal information or other data caused
+          directly or indirectly by technical problems, power failures, unlawful
+          acts (such as data theft), harmful computer program or virus, or
+          because of my own negligence;
+        </li>
+        <li>any event over which we have no direct control.</li>
+      </ul>
+
+
+      <ul class="form__tabs">
+        <li class="form__tab form__tab--active" data-tab="contact-us" data-id="link_tab_tab" dta-text="need help | Contact us">
+          <i data-component="icon" data-icon="icon-settings" data-gradient="" data-path="/static_file/assets/icons/" class="icon icon--valign-middle call-me-back__tab-icon"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="34px" viewBox="0 0 34 34" version="1.1">
+            <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+            <title>icon-settings</title>
+            <desc>Created with Sketch.</desc>
+            <defs><linearGradient xy="100%" id="gradient"><stop stop-color="#fff" offset="0%"></stop><stop stop-color="#fff" offset="100%"></stop></linearGradient></defs>
+            <g id="Standard-Bank---Icon-Setup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-633.000000, -5027.000000)">
+                <g id="Icons---Settings" transform="translate(69.000000, 4835.000000)">
+                    <g id="icon-settings" transform="translate(564.000000, 192.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="34" height="34"></rect>
+                        <path d="M31.1465654,15.08325 L34,12.3986667 L29.4892747,4.59991667 L24.8451715,5.99391667 L22.6231533,4.71325 L21.5078875,0 L12.4921125,0 L11.5911026,3.808 L8.26233203,5.72475 L4.50788749,4.59991667 L0,12.3986667 L2.85059678,15.0818333 L2.85059678,18.9181667 L0,21.6013333 L4.50788749,29.3986667 L8.26233203,28.2738333 L11.5911026,30.1905833 L12.4921125,34 L21.5078875,34 L22.4103163,30.1905833 L25.737668,28.2738333 L29.4892747,29.3986667 L34,21.6013333 L31.1465654,18.91675 L31.1465654,15.08325 Z M30.4200818,22.1269167 L28.1554962,26.03975 L25.3801018,25.2081667 L19.928637,28.3475 L19.2631667,31.1666667 L14.7368333,31.1666667 L14.0699441,28.3475 L8.61989817,25.2081667 L5.8445038,26.03975 L3.5799182,22.1255 L5.68842334,20.14075 L5.68842334,13.85925 L3.5799182,11.8730833 L5.8445038,7.95883333 L8.61989817,8.79183333 L14.0699441,5.65108333 L14.7368333,2.83333333 L19.2631667,2.83333333 L20.1428929,6.55491667 L24.4876054,9.05958333 L28.1554962,7.95883333 L30.4200818,11.8730833 L28.3087388,13.8578333 L28.3087388,20.14075 L30.4200818,22.1269167 Z M16.9985811,9.91666667 C13.0866372,9.91666667 9.90401469,13.09425 9.90401469,17 C9.90401469,20.90575 13.0866372,24.0833333 16.9985811,24.0833333 C20.910525,24.0833333 24.0931475,20.90575 24.0931475,17 C24.0931475,13.09425 20.910525,9.91666667 16.9985811,9.91666667 Z M16.9985811,21.25 C14.6516985,21.25 12.7418412,19.3431667 12.7418412,17 C12.7418412,14.6568333 14.6516985,12.75 16.9985811,12.75 C19.3454637,12.75 21.2553209,14.6568333 21.2553209,17 C21.2553209,19.3431667 19.3454637,21.25 16.9985811,21.25 Z" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </svg></i>
+        <span class="form__tab__title">Contact us</span>
+        </li>
+        <li class="form__tab" data-tab="form" data-id="link_tab_tab" data-text="need help | Call me back">
+        <i data-component="icon" data-icon="icon-phone" data-gradient="" data-path="/static_file/assets/icons/" class="icon icon--valign-middle call-me-back__tab-icon"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="37px" viewBox="0 0 36 37" version="1.1">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <title>Shape</title>
+            <desc>Created with Sketch.</desc>
+            <defs><linearGradient xy="100%" id="gradient"><stop stop-color="#fff" offset="0%"></stop><stop stop-color="#fff" offset="100%"></stop></linearGradient></defs>
+            <g id="01_Call-me-back" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Call-me-back_help" transform="translate(-1167.000000, -205.000000)" fill-rule="nonzero" fill="#00AD6C">
+                    <g id="call-me-back-modal" transform="translate(940.000000, 184.000000)">
+                        <g id="modal">
+                            <g id="call-me-back">
+                                <g transform="translate(227.000000, 21.000000)">
+                                    <path d="M34.1272334,24.5247152 L27.2689918,20.9891 C25.7780697,20.2223401 23.9037677,20.60572 22.8388233,21.9688488 L21.007119,24.3117263 C19.2180125,23.2893798 17.5992971,22.1392399 15.8101906,20.3075356 C13.9358886,18.4332336 12.8283465,16.8571159 11.7634021,14.9828139 L14.1062797,13.1511096 C15.4268107,12.0861653 15.8527884,10.254461 15.0860285,8.72094113 L11.5504132,1.90529731 C11.0818377,1.01074406 10.27248,0.371777455 9.29273124,0.116190812 C8.31298244,-0.139395831 7.29063587,0.0309952643 6.43868039,0.584766324 L2.09370746,3.48141494 C0.687980924,4.41856597 -0.0787790052,5.9946836 0.00641654245,7.69859455 C0.134209864,9.48770105 0.304600959,10.8508298 0.560187602,11.8305786 C1.88071859,16.9423115 5.03295385,22.1818377 9.46312233,26.6120061 C13.8932908,31.0421746 19.132817,34.1944099 24.2445499,35.5149409 C25.2242986,35.7705275 26.6300252,35.9409186 28.3765339,36.0687119 C28.4617295,36.0687119 28.5895228,36.0687119 28.6747183,36.0687119 C30.250836,36.0687119 31.741758,35.2593542 32.5937135,33.9388232 L35.4477644,29.5512525 C36.0015354,28.6992971 36.1293287,27.6769505 35.8737421,26.7397995 C35.6181555,25.8026484 35.0217866,24.9932907 34.1272334,24.5247152 Z M33.3178757,28.1881238 L30.4638248,32.5756945 C30.0378471,33.2146611 29.3136849,33.598041 28.546925,33.5554433 C26.9708074,33.4702477 25.6928742,33.2998566 24.8835165,33.0868678 C20.2403591,31.8941301 15.3842129,28.9548837 11.2948266,24.8228996 C7.16284255,20.6909156 4.26619393,15.8773671 3.03085848,11.2342098 C2.81786962,10.4248521 2.64747852,9.14691886 2.56228297,7.57080123 C2.5196852,6.8040413 2.86046739,6.07987915 3.499434,5.65390141 L7.84440693,2.75725279 C8.0573958,2.62945947 8.22778689,2.58686169 8.39817799,2.58686169 C8.48337353,2.58686169 8.56856908,2.58686169 8.65376463,2.62945947 C8.82415572,2.67205724 9.12234014,2.79985056 9.29273124,3.14063275 L12.8283465,9.95627657 C13.0413353,10.3822543 12.913542,10.8934276 12.5727598,11.191612 L8.52597131,14.3438473 L9.03714459,15.2809983 C10.3576756,17.7516692 11.6356088,19.7537645 14.0636819,22.1392399 C16.4065595,24.4821174 18.4512526,25.8026484 20.8367279,27.0805816 L21.773879,27.5917549 L24.968712,23.5023686 C25.2668964,23.1189887 25.7780697,23.0337931 26.2040474,23.246782 L33.062289,26.7823972 C33.3178757,26.9101905 33.4882668,27.1231794 33.5734623,27.4213638 C33.5308645,27.6769505 33.4882668,27.9751349 33.3178757,28.1881238 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg></i>
+        <span class="form__tab__title">Call me back</span>
+        </li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="js/forms.js"></script>
+  </body>
+</html>
